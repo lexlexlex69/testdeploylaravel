@@ -19,6 +19,10 @@ class UserController extends Controller
             User::query()->orderBy('id', 'desc')->paginate(10)
         );
     }
+    public function index2()
+    {
+        return response(User::all());
+    }
 
     /**
      * Store a newly created resource in storage.
