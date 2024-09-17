@@ -10,17 +10,6 @@
             "dest": "/api/index.php"
         }
     ],
-    "rewrites": [{ "source": "/api/(.*)", "destination": "/api/index.php" }],
-    "headers": [
-        {
-            "source": "/(.*)",
-            "headers": [{ "key": "Access-Control-Allow-Origin", "value": "*" }]
-        },
-        {
-            "source": "/vercel_app_domain_name/(.*)",
-            "headers": [{ "key": "Access-Control-Allow-Origin", "value": "*" }]
-        }
-    ],
     "env": {
         "APP_ENV": "production",
         "APP_DEBUG": "true",
